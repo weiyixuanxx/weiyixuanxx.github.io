@@ -1,0 +1,25 @@
+{
+  "title": "我的个人博客",
+  "description": "记录学习、项目和思考。",
+  "author": "Your Name",
+  "baseUrl": "https://weiyixuanxx.github.io",
+  "language": "zh-CN",
+  "social": {
+    "github": "https://github.com/weiyixuanxx",
+    "email": "mailto:you@example.com"
+  },
+  "nav": [
+    {
+      "label": "首页",
+      "href": "/"
+    },
+    {
+      "label": "文章",
+      "href": "/blog/"
+    },
+    {
+      "label": "关于",
+      "href": "/about/"
+    }
+  ]
+}

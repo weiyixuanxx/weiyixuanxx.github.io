@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Personal blog profile card">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f3ea"/>
+      <stop offset="0.45" stop-color="#edf4f2"/>
+      <stop offset="1" stop-color="#f6edf0"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#176b87"/>
+      <stop offset="1" stop-color="#b13f5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" rx="0" fill="url(#bg)"/>
+  <rect x="80" y="82" width="800" height="376" rx="28" fill="#ffffff" opacity="0.78"/>
+  <circle cx="210" cy="210" r="74" fill="url(#accent)"/>
+  <text x="210" y="229" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff">YN</text>
+  <text x="320" y="177" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#182026">我的个人博客</text>
+  <text x="320" y="224" font-family="Arial, sans-serif" font-size="24" fill="#4d5960">学习笔记 · 项目复盘 · 技术文章</text>
+  <rect x="320" y="276" width="410" height="12" rx="6" fill="#176b87" opacity="0.18"/>
+  <rect x="320" y="314" width="300" height="12" rx="6" fill="#b13f5a" opacity="0.18"/>
+  <rect x="320" y="352" width="360" height="12" rx="6" fill="#2f7d5c" opacity="0.18"/>
+</svg>
