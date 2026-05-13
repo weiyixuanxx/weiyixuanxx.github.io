@@ -190,17 +190,41 @@ def layout(config: dict, title: str, content: str, description: str = "") -> str
   <meta name="description" content="{html.escape(description or config.get("description", ""))}">
   <link rel="stylesheet" href="{href("/assets/styles.css", config)}">
   <link rel="alternate" type="application/rss+xml" title="{html.escape(config["title"])}" href="{href("/feed.xml", config)}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="{href("/", config)}">{html.escape(config["title"])}</a>
-    <nav>{nav}</nav>
+    <div class="header-left">
+      <a class="brand" href="{href("/", config)}">{html.escape(config["title"])}</a>
+      <nav>{nav}</nav>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button>
   </header>
   <main>{content}</main>
   <footer class="site-footer">
-    <span>© {datetime.now().year} {html.escape(config.get("author", ""))}</span>
+    <span>&copy; {datetime.now().year} {html.escape(config.get("author", ""))}</span>
     <a href="{href("/feed.xml", config)}">RSS</a>
   </footer>
+  <script>
+    (function() {{
+      const t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+      updateIcon(t);
+    }})();
+    function toggleTheme() {{
+      const cur = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      updateIcon(next);
+    }}
+    function updateIcon(t) {{
+      const btn = document.querySelector('.theme-toggle');
+      if (btn) btn.textContent = t === 'dark' ? '☀️' : '🌙';
+    }}
+  </script>
 </body>
 </html>
 """
@@ -239,7 +263,9 @@ def build_home(config: dict, posts: list[Post]) -> str:
       <a class="button" href="{html.escape(email, quote=True)}">联系我</a>
     </div>
   </div>
-  <img src="{href("/assets/profile-card.svg", config)}" alt="个人博客封面">
+  <div class="hero-visual">
+    <img src="{href("/assets/profile-card.svg", config)}" alt="个人博客封面">
+  </div>
 </section>
 <section class="section">
   <div class="section-head">

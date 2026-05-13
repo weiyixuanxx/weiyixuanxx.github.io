@@ -1,22 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Personal blog profile card">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f7f3ea"/>
-      <stop offset="0.45" stop-color="#edf4f2"/>
+      <stop offset="0" stop-color="#f0f7fa"/>
+      <stop offset="0.5" stop-color="#edf4f2"/>
       <stop offset="1" stop-color="#f6edf0"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#176b87"/>
-      <stop offset="1" stop-color="#b13f5a"/>
+      <stop offset="1" stop-color="#2f7d5c"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b13f5a"/>
+      <stop offset="1" stop-color="#176b87"/>
     </linearGradient>
   </defs>
   <rect width="960" height="540" rx="0" fill="url(#bg)"/>
-  <rect x="80" y="82" width="800" height="376" rx="28" fill="#ffffff" opacity="0.78"/>
-  <circle cx="210" cy="210" r="74" fill="url(#accent)"/>
-  <text x="210" y="229" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff">YN</text>
-  <text x="320" y="177" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#182026">我的个人博客</text>
-  <text x="320" y="224" font-family="Arial, sans-serif" font-size="24" fill="#4d5960">学习笔记 · 项目复盘 · 技术文章</text>
-  <rect x="320" y="276" width="410" height="12" rx="6" fill="#176b87" opacity="0.18"/>
-  <rect x="320" y="314" width="300" height="12" rx="6" fill="#b13f5a" opacity="0.18"/>
-  <rect x="320" y="352" width="360" height="12" rx="6" fill="#2f7d5c" opacity="0.18"/>
+  <!-- Main card -->
+  <rect x="60" y="60" width="840" height="420" rx="24" fill="#ffffff" opacity="0.9"/>
+  <!-- Decorative circles -->
+  <circle cx="780" cy="120" r="80" fill="url(#accent)" opacity="0.06"/>
+  <circle cx="140" cy="400" r="60" fill="url(#accent2)" opacity="0.06"/>
+  <!-- Avatar -->
+  <circle cx="200" cy="220" r="70" fill="url(#accent)"/>
+  <text x="200" y="237" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="700" fill="#ffffff">W</text>
+  <!-- Info -->
+  <text x="310" y="185" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800" fill="#182026">Weiyixuan's Blog</text>
+  <text x="310" y="230" font-family="Inter, Arial, sans-serif" font-size="20" fill="#5d6a72">Deep Learning | Computer Vision | Tech Notes</text>
+  <!-- Decorative bars -->
+  <rect x="310" y="270" width="380" height="8" rx="4" fill="url(#accent)" opacity="0.2"/>
+  <rect x="310" y="298" width="260" height="8" rx="4" fill="url(#accent2)" opacity="0.2"/>
+  <rect x="310" y="326" width="320" height="8" rx="4" fill="#2f7d5c" opacity="0.15"/>
+  <!-- Tags -->
+  <rect x="310" y="370" width="80" height="30" rx="15" fill="none" stroke="#176b87" stroke-width="1.5" opacity="0.5"/>
+  <text x="350" y="390" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#176b87">Python</text>
+  <rect x="404" y="370" width="100" height="30" rx="15" fill="none" stroke="#2f7d5c" stroke-width="1.5" opacity="0.5"/>
+  <text x="454" y="390" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#2f7d5c">PaddlePaddle</text>
+  <rect x="518" y="370" width="60" height="30" rx="15" fill="none" stroke="#b13f5a" stroke-width="1.5" opacity="0.5"/>
+  <text x="548" y="390" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#b13f5a">ViT</text>
 </svg>
