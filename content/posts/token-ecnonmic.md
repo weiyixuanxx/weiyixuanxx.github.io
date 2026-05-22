@@ -1,4 +1,9 @@
-# Token 经济学
+---
+title: token 经济学
+date: 2026-05-22
+description: 合理的 vibe coding , 不要浪费 token
+tags: 博客, Markdown
+---
 
 在 vibe coding 的时候，我发现很多人对于 token 的消耗完全没有概念。
 其实这里面就有之前的我，我刚开始使用 codex 和 claude 这类 AI 编程工具的时候，
