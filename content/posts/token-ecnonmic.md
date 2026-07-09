@@ -5,6 +5,8 @@ description: 合理的 vibe coding , 不要浪费 token
 tags: 博客, Markdown
 ---
 
+# token 经济学
+
 在 vibe coding 的时候，我发现很多人对于 token 的消耗完全没有概念。
 其实这里面就有之前的我，我刚开始使用 codex 和 claude 这类 AI 编程工具的时候，
 花 token 总是大手大脚的，结果一回头发现，几天没到居然一千多块钱就花出去了。。。
@@ -53,7 +55,7 @@ tags: 博客, Markdown
 
 ## 5. 选用不同厂家的 token 方案
 
-
+有些厂家的 token 更加便宜，有些厂家的则更贵。这是显而易见的。当然，我还是推荐大家使用贵一点的 token 提高写代码的质量，贵有贵的道理的。
 
 
 
